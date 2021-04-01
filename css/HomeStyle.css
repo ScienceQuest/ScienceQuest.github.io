@@ -1,0 +1,233 @@
+.contenido{
+    display: flex;
+    min-width: 100%;
+    height: 90vh;
+    background-color: #000;
+}
+
+#myVideo {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+.content h1{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: none;
+}
+.content img{
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.content button, #descarga{
+    display: block;
+    border: none;
+    font-size: 2em;
+    border-radius: 12.5px;
+    background-color: #47525E;
+    color: #fff;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding: 15px;
+    margin-bottom: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content button:focus {
+    outline: none;
+}
+
+.content button:hover, #descarga:hover{
+    color: #71ABE3;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid white;
+    width: 35%; 
+    z-index: 1;
+  }
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 1% auto auto auto; 
+    border: 1px solid white;
+    width: 50%; 
+    z-index: 1;
+}
+  
+.modalTitle {
+    text-align: center;
+    margin: 8% 0 3% 0;
+    position: relative;
+}
+
+.modal-content2 .modalTitle {
+    margin: 5% 0 3% 0;
+}
+
+.modalTitle h2 {
+    color: #47525E;
+    font-size: 2em;
+}
+
+.modalTitle p {
+    margin-top: 20px;
+    color: #5f6b70;
+    font-size: 1em;
+}
+
+.modal-content2 .modalTitle p {
+    margin-top: 10px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.container {
+    padding: 10px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container input{
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8c9ba1;
+    color: #47525E;
+    width: 45%;
+    margin: 15px auto 15px auto;
+}
+
+.container button{
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 45%;
+    margin: 25px auto 15px auto;
+    background-color: #47525E;
+    font-size: 1em;
+}
+
+.container button:hover, .modal-content2 button:hover{
+    cursor: pointer;
+    color: #71ABE3;
+}
+
+.container2 input, select{
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8c9ba1;
+    color: #47525E;
+    width: 80%;
+    margin: 15px auto 15px auto;
+}
+
+.container2 .fecha {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.container2 .fecha label{
+    color: #5f6b70;
+    font-size: 0.85em;
+}
+
+.container2 .fecha input {
+    width: 100%;
+    margin: 5px auto 15px auto;
+}
+
+.modal-content2 button{
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 50%;
+    margin: 25px auto 15px auto;
+    background-color: #47525E;
+    font-size: 1em;
+}
+
+
+
+.extra {
+    display: block;
+    text-align: center;
+    font-size: 0.75em;
+    color: #8c9ba1;
+    padding: 15px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.extra p {
+    padding: 3px;
+}
+
+.extra a{
+    color: #47525E;
+    text-decoration: underline;
+    cursor: pointer;
+}
+

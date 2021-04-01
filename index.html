@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <title>Science Quest</title>
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/HomeStyle.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a class="active" href="">Iniciar Juego</a></li>
+        <li><a href="/acercaDe.html">Acerca de</a></li>
+        <li><a href="/Statistics.html">Estadísticas</a></li>
+        <li><a href="/porQueStem.html">¿Por qué STEM?</a></li>
+        <li><a href="/AboutUs.html" >¿Quiénes somos?</a></li>          
+      </ul>
+    </nav>
+    <div class="contenido">
+      <!-- The video -->
+      <video autoplay muted loop id="myVideo">
+        <source src="/video/SuperIntro.mp4" type="video/mp4">
+      </video>
+    
+      <div class="content">
+        <h1>Construido por Estudiantes STEM para Futuros Estudiantes STEM</h1>
+        <img src="/img/Title.svg">
+        <button onclick="document.getElementById('id01').style.display='block'">Jugar</button>
+        <a id="descarga" href="/Demo.zip" download="">Descargar Juego</a>
+      </div>
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="#" method="post">
+          <div class="modalTitle">
+            <h2>Inicia Sesión</h2>
+            <p>Ingresa tu nombre de usuario y tu constraseña</p>
+          </div>
+
+          <div class="container">
+            <input type="text" placeholder="Username" name="uname" required>
+            <input type="password" placeholder="Contraseña" name="psw" required>
+            <button type="submit">Iniciar Sesión</button>
+          </div>
+
+          <div class="extra">
+            <p>¿No tienes cuenta? <a onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'"><u>¡Regístrate!</u></a></p>
+            <p>¿Olvidaste tu contraseña? <a href="/index.html">¡Nosotros te ayudamos!</a></p>
+          </div>
+        </form>
+      </div>
+      <div id="id02" class="modal">
+        <form class="modal-content2 animate" action="#" method="post">
+          <div class="modalTitle">
+            <h2>¡Regístrate!</h2>
+            <p>¿Qué esperas para empezar a jugar?</p>
+          </div>
+
+          <div class="container2">
+            <input type="text" placeholder="Nombre" name="Name" required>
+            <input type="text" placeholder="Username" name="uname" required>
+            <input type="text" placeholder="Apellido Paterno" name="app1" required>
+            <input type="text" placeholder="Apellido Materno" name="app2" required>
+            <input type="text" placeholder="Email" name="mail">
+            <input type="password" placeholder="Contraseña" name="psw" required>
+            <select id='escol' name="escol" required>
+              <option value="" disabled selected>Escolaridad</option>
+              <option>Primaria</option>
+              <option>Secundaria</option>
+              <option>Preparatoria</option>
+            </select>
+            <select id='gender' name="gender" required>
+              <option value="" disabled selected>Género</option>
+              <option value="m">Mujer</option>
+              <option value="h">Hombre</option>
+              <option value="nb">No binario</option>
+              <option value="na">Prefiero no decir</option>
+            </select>
+            <div class="fecha">
+              <label for="birthdate">Fecha de nacimiento:</label>
+              <input type="date" placeholder="Fecha de nacimiento" name="birthdate">
+            </div>
+          </div>
+          <button type="submit">Registrarse</button>
+          <div class="extra">
+            <p>Al registrarse usted está accediendo a nuestros términos y condiciones.</p>
+          </div>
+        </form>
+      </div>
+      <script type="text/javascript" src="js/logIn.js"></script>
+    </div>
+  </body>
+</html>
+

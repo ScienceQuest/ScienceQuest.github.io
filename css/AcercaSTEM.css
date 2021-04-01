@@ -1,0 +1,62 @@
+.imageHolder {
+    display: flex;
+    width: 100%;
+}
+.imageHolder img {
+    width: 100%;
+    max-height: 25vh;
+}
+
+.data {
+    display: grid;
+    width: 84%;
+    grid-template-columns: 50% 50%;
+    margin: 3% 8% 3% 8%;
+    color: #5f6b70;
+}
+
+.data .info, .data .info2 {
+    padding: 5%;
+}
+
+h2 {
+    width: 50%;
+    font-size: 1.75em;
+    text-indent: 16%;
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+#largo {
+    text-indent: 11%;
+    width: 100%;
+}
+
+.info2 h2 {
+    width: 90%;
+    text-indent: 2%;
+    margin-left: 10%;
+}
+
+p {
+    margin-top: 2em;
+    padding-right: 10%;
+    width: 90%;
+    float: right;
+    line-height:1.75em;
+}
+
+.info2 p {
+    padding-right: 20%;
+}
+
+.image {
+    padding:5%;
+}
+
+.image img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}

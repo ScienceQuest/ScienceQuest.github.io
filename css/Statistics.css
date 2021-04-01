@@ -1,0 +1,60 @@
+.statsmain{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+h1{
+    color: #47525E;
+    text-align: center;
+
+}
+h2{
+    color: #47525E;
+    text-align: center; 
+}
+
+h3{
+    font-size: 1em;
+    font-weight: 300;
+    color: #47525E;
+    text-align: left; 
+}
+h4{
+    font-size: 0.85em;
+    font-weight: 200;
+    color: #47525E;
+    text-align: left; 
+}
+.userstats{
+    margin-top: 5vh;
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    text-align: center;
+}
+
+.userstats img{
+    padding: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vh;
+}
+
+.globalstats{
+    margin-top: 5vh;
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    text-align: center;
+}
+
+.globalstats img{
+    padding: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vh;
+}
