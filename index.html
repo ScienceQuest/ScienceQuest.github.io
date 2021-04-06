@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Science Quest</title>
-    {% load static%}
-    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
-    <link href="{% static 'css/HomeStyle.css' %}" rel="stylesheet"/>
-    <link rel="shortcut icon" href="{% static 'img/icon.svg'%}">
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/HomeStyle.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <nav class="nav-bar">
@@ -21,14 +20,14 @@
     <div class="contenido">
       <!-- The video -->
       <video autoplay muted loop id="myVideo">
-        <source src="{% static '/video/SuperIntro.mp4'%}" type="video/mp4">
+        <source src="/video/SuperIntro.mp4" type="video/mp4">
       </video>
     
       <div class="content">
         <h1>Construido por Estudiantes STEM para Futuros Estudiantes STEM</h1>
-        <img src="{% static '/img/Title.svg'%}">
+        <img src="/img/Title.svg">
         <button onclick="document.getElementById('id01').style.display='block'">Jugar</button>
-        <a id="descarga" href="{% static 'juego/Demo.zip'%}" download="">Descargar Juego</a>
+        <a id="descarga" href="/Demo.zip" download="">Descargar Juego</a>
       </div>
       <div id="id01" class="modal">
         <form class="modal-content animate" action="#" method="post">
@@ -87,7 +86,7 @@
           </div>
         </form>
       </div>
-      <script type="text/javascript" src="{% static 'js/logIn.js'%}"></script>
+      <script type="text/javascript" src="js/logIn.js"></script>
     </div>
   </body>
 </html>
