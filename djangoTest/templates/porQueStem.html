@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>¿Por qué STEAM?</title>
-        <link rel="shortcut icon" href="img/icon.svg">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/AcercaSTEM.css" rel="stylesheet" type="text/css">
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'img/icon.svg'%}">
+        <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/AcercaSTEM.css'%}" rel="stylesheet" type="text/css">
     </head>
     <body>
         <nav class="nav-bar">
@@ -18,7 +19,7 @@
             </ul>
         </nav>
         <div class="imageHolder">
-            <img src="img/BannerImg.png" alt="Banner"/>
+            <img src="{% static 'img/BannerImg.png'%}" alt="Banner"/>
         </div>
         <div class="data">
             <div class="info">
@@ -26,10 +27,10 @@
                 <p>STEM es una tendencia mundial que promueve la enseñanza de Ciencias, Tecnología, Ingeniería y Matemáticas (por sus siglas en inglés) como pilares para el desarrollo sostenible y bienestar social.</p>
             </div>
             <div class="image">
-                <img src="img/stem.jpg" alt="StemImg">
+                <img src="{% static 'img/stem.jpg'%}" alt="StemImg">
             </div>
             <div class="image">
-                <img src="img/steam.jpg" alt="SteamImg">
+                <img src="{% static 'img/steam.jpg'%}" alt="SteamImg">
             </div>
             <div class="info">
                 <h2 id="largo">La Diferencia entre STEM y STEAM</h2>

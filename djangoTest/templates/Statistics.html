@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+<<<<<<< HEAD:djangoTest/templates/Statistics.html
+    <title>Science Quest</title>
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'img/icon.svg'%}">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/Statistics.css'%}" rel="stylesheet" type="text/css">
+=======
+    <title>Estadísticas</title>
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/Statistics.css" rel="stylesheet" type="text/css">
+>>>>>>> a0f1f41896c82609572d04fc8aab725bebdf0097:Statistics.html
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="{% static 'js/statsUsuarioDisciplinas.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/statsUsuarioPreguntas.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/TiempoPreguntaUsuario.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/statsGlobalDisciplinas.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/statsGlobalPreguntas.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/TiempoPreguntaGlobal.js'%}"></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="/index.html">Iniciar Juego</a></li>
+        <li><a href="/acercaDe.html">Acerca de</a></li>
+        <li><a class="active" href="">Estadísticas</a></li>
+        <li><a href="/porQueStem.html">¿Por qué STEM?</a></li>
+        <li><a href="/AboutUs.html" >¿Quiénes somos?</a></li>    
+      </ul>
+    </nav>
+  <div class="statsmain">
+    <div class="userstats">
+      <h1>Estadísticas del Usuario</h1>
+      <img src="{% static 'img/UserIcon.png'%}">     
+      <br>
+      <h2>Username: SusyGuardia</h1>
+      <br>
+      <h2>Edad: 16 años</h1>
+      <br>
+      <h2>Nivel Escolar: Preparatoria</h1>
+      <br>
+      <br>
+      <br>
+      <div id="barchart_material_Discilinas_Usuarios" style="width: 50vh; height: 30vh;"></div>
+      <br>
+      <br>
+      <br>
+      <H3>Tiempo de Respuesta Promedio</H3>
+      <br>
+      <H4>¿Cuánto tiempo te tardas en contestar en promedio? (segundos)</H4>
+      <br>
+      <br>
+      <div id="tiempoPromedio" style="width: 400px; height: 120px; margin-right: 50%; margin-left: 50%;"></div>
+      <br>
+      <br>
+      <br>
+      <div id="barchart_material_Aciertos_Usuarios" style="width: 50vh; height: 30vh;"></div>
+      <br>
+    </div>
+    <div class="globalstats">
+      <h1>Estadísticas Globales</h1>
+      <img src="{% static 'img/WorldIcon.png'%}">
+      <br>
+      <h2>Número de Usuarios Totales: 1,000 jugadores</h1>
+      <br>
+      <h2>Tiempo Jugado Acumulado: 30 hrs.</h1>
+      <br>
+      <br>
+      <br>
+      <div id="barchart_material_Discilinas_Global" style="width: 50vh; height: 30vh;"></div>
+      <br>
+      <br>
+      <br>
+      <H3>Tiempo de Respuesta Promedio</H3>
+      <br>
+      <H4>¿Cuánto tiempo te tardas en contestar en promedio? (segundos)</H4>
+      <br>
+      <br>
+      <div id="tiempoPromedioG" style="width: 400px; height: 120px; margin-right: 50%; margin-left: 50%;"></div>
+      <br>
+      <br>
+      <br>
+      <div id="barchart_material_Aciertos_Global" style="width: 50vh; height: 30vh;"></div>
+      <br>
+    </div>
+  </div>
+  </body>
+</html>
